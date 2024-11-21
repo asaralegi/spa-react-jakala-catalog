@@ -17,6 +17,7 @@ Como ejecutamos la app en desarrollo desde el contenedor, añadimos el argumento
 Utilizaremos las siguientes dependencias:
 
 - react-router-dom: Componente Router para la navegación de la App
+- vitest @testing-library/react @testing-library/jest-dom @testing-library/user-event: paquetes necesarios para testing
 
 ## Desarrollo de la App
 
@@ -27,3 +28,9 @@ Utilizaremos las siguientes dependencias:
 - Crear las 2 páginas vacías que requiere la app (HomePage y ProductPage)
 - ProductPage: añadir un parámetro id para pasarle el id del producto a mostrar
 
+### Task 002 - Instalar dependencias y configurar tests
+
+- Instalar Vitest y el resto de dependecias para crear tests (vitest @testing-library/react @testing-library/jest-dom @testing-library/user-event)
+- Configurar testing en vite.config.ts
+- Crear un componente base de Layout para el template de la página
+- Añadir el componente Layout a las páginas existentes y crear primeros tests básicos
