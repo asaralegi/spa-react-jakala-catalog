@@ -34,3 +34,12 @@ Utilizaremos las siguientes dependencias:
 - Configurar testing en vite.config.ts
 - Crear un componente base de Layout para el template de la página
 - Añadir el componente Layout a las páginas existentes y crear primeros tests básicos
+
+### Task 003 - Instalar Bootstrap y crear componentes para el Header
+
+- Instalar Bootstrap para diseño de la aplicación (dependencia bootstrap)
+- Añadir parámetro breadcrumb al componente Layout para dibujarlo en el header
+- Crear 2 componentes para el Header:
+ - Brand: con el nombre o logo de la empresa
+ - Breadcrumb: rastro de la navegación con links
+- Refactorizar y adaptar test del Layout

@@ -9,13 +9,18 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={
-            <Layout>
+            <Layout breadcrumb={[{ label: "Inicio", active: true }]}>
               <HomePage />
             </Layout>
           } 
         />
         <Route path="/product/:id" element={
-            <Layout>
+            <Layout
+              breadcrumb={[
+                { label: "Inicio", path: "/" },
+                { label: "Producto", active: true },
+              ]}
+            >
               <ProductPage />
             </Layout>
           } 
