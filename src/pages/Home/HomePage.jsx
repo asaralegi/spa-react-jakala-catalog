@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { fetchProducts } from '../services/ApiService';
+import { fetchProducts } from '../../services/ApiService';
+import ListView from './components/ListView';
 
 function HomePage() {
 
@@ -26,14 +27,7 @@ function HomePage() {
     return (
       <div className="container mt-4">
         <h1 className="mb-4">Home Page</h1>
-
-        <div>
-            <ul>
-                {products.map((product) => (
-                <li key={product.id}>{product.name}</li>
-                ))}
-            </ul>
-        </div>
+        <ListView products={products} />
       </div>
     );
   }
