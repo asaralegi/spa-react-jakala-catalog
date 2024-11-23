@@ -5,6 +5,6 @@ describe('HomePage Component', () => {
   test('Renders Home h1 title', () => {
     render(<HomePage />);
 
-    expect(screen.getByText('Home Page')).toBeInTheDocument();
+    expect(screen.getByText('Lista de Productos')).toBeInTheDocument();
   });
 });
