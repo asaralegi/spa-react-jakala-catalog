@@ -18,6 +18,7 @@ Utilizaremos las siguientes dependencias:
 
 - react-router-dom: Componente Router para la navegación de la App
 - vitest @testing-library/react @testing-library/jest-dom @testing-library/user-event: paquetes necesarios para testing
+- bootstrap
 
 ## Desarrollo de la App
 
@@ -43,3 +44,8 @@ Utilizaremos las siguientes dependencias:
  - Brand: con el nombre o logo de la empresa
  - Breadcrumb: rastro de la navegación con links
 - Refactorizar y adaptar test del Layout
+
+### Task 004 - Crear servicio de acceso al API
+
+- Crear ApiService.ts con funciones de acceso al API
+- Modificar las páginas Home y Producto para añadir función de acceso al API

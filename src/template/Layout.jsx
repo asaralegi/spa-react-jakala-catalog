@@ -7,7 +7,7 @@ function Layout({ children, breadcrumb }) {
   return (
     <div>
       <header>
-        <nav class="navbar navbar-expand-md navbar-dark bg-info fixed-top">
+        <nav className="navbar navbar-expand-md navbar-dark bg-info fixed-top">
             <Brand />
             <Breadcrumb items={breadcrumb} />
         </nav>
