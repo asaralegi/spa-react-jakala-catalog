@@ -22,7 +22,7 @@ export const fetchProducts = async () => {
  * @param {string} id Product ID
  * @returns {Promise<Object>} Product details
  */
-export const fetchProductById = async (id) => {
+export const fetchProductById = async id => {
   try {
     const response = await fetch(`${BASE_URL}/product/${id}`);
     if (!response.ok) {

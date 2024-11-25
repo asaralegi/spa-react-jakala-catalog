@@ -11,14 +11,14 @@ describe('HomePage Component', () => {
       id: 1,
       name: 'Producto 1',
       price: 5,
-      imgUrl: 'https://placehold.co/150'
+      imgUrl: 'https://placehold.co/150',
     },
     {
       id: 2,
       name: 'Producto 2',
       price: 10,
-      imgUrl: 'https://placehold.co/150'
-    }
+      imgUrl: 'https://placehold.co/150',
+    },
   ];
 
   test('Renders Home h1 title', () => {
@@ -40,7 +40,5 @@ describe('HomePage Component', () => {
     await waitFor(() => {
       expect(screen.getByText('Producto 1')).toBeInTheDocument();
     });
-
   });
-
 });
