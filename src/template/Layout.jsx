@@ -1,6 +1,6 @@
 import React from 'react';
-import { Link } from "react-router-dom";
-import Brand from "./components/Brand";
+import { Link } from 'react-router-dom';
+import Brand from './components/Brand';
 import Breadcrumb from './components/Breadcrumb';
 
 function Layout({ children, breadcrumb }) {
@@ -8,8 +8,8 @@ function Layout({ children, breadcrumb }) {
     <div>
       <header>
         <nav className="navbar navbar-expand-md navbar-dark bg-info fixed-top">
-            <Brand />
-            <Breadcrumb items={breadcrumb} />
+          <Brand />
+          <Breadcrumb items={breadcrumb} />
         </nav>
       </header>
       <main>{children}</main>

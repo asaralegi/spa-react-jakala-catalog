@@ -13,7 +13,7 @@ export default tseslint.config(
       js.configs.recommended,
       ...tseslint.configs.recommended,
       'plugin:prettier/recommended', // Activa Prettier como plugin
-      prettier // Desactiva reglas de ESLint en conflicto con Prettier
+      prettier, // Desactiva reglas de ESLint en conflicto con Prettier
     ],
     files: ['**/*.{ts,tsx}'],
     languageOptions: {
@@ -27,11 +27,8 @@ export default tseslint.config(
     },
     rules: {
       ...reactHooks.configs.recommended.rules,
-      'react-refresh/only-export-components': [
-        'warn',
-        { allowConstantExport: true },
-      ],
+      'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
       'prettier/prettier': 'warn', // Regla para usar Prettier como validador
     },
-  },
+  }
 );

@@ -10,18 +10,18 @@ describe('ProductPage Component', () => {
     id: 1,
     name: 'Producto Ejemplo',
     price: 100,
-    imgUrl: 'https://placehold.co/150'
+    imgUrl: 'https://placehold.co/150',
   };
 
   test('Renders Product h1 title', async () => {
     api.fetchProductById.mockResolvedValue(mockProduct);
 
     render(
-        <MemoryRouter initialEntries={['/product/1']}>
-          <Routes>
-            <Route path="/product/:id" element={<ProductPage />} />
-          </Routes>
-        </MemoryRouter>
+      <MemoryRouter initialEntries={['/product/1']}>
+        <Routes>
+          <Route path="/product/:id" element={<ProductPage />} />
+        </Routes>
+      </MemoryRouter>
     );
 
     // Comprobar loading state
@@ -29,8 +29,7 @@ describe('ProductPage Component', () => {
 
     // Esperar a que se cargue el producto
     await waitFor(() => {
-        expect(screen.getByText('Producto Ejemplo')).toBeInTheDocument();
+      expect(screen.getByText('Producto Ejemplo')).toBeInTheDocument();
     });
-
   });
 });
