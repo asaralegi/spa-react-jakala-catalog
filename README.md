@@ -49,3 +49,17 @@ Utilizaremos las siguientes dependencias:
 
 - Crear ApiService.ts con funciones de acceso al API
 - Modificar las páginas Home y Producto para añadir función de acceso al API
+
+### Task 005 - Crear componente ListView para la HomePage
+
+- Crear carpeta para agrupar los componentes de la HomePage
+- Crear subcomponentes ListView e Item para mostrar la lista de productos en columnas y tarjetas de Bootstrap
+- Añadir navegación a ProductPage
+- Añadir casilla de filtrado de productos (por nombre o nombre científico)
+
+### Task 006 - Crear componente DetailView para ProductPage
+
+- Crear carpeta para agrupar los componentes de ProductPage
+- Crear subcomponentes DetailView, Image y Description para mostrar la información detallada de un producto
+- Añadir botón de navegación hacia atrás
+- Adaptar test de ProductPage haciendo mock de la llamada al servicio para simular la obtención de un producto

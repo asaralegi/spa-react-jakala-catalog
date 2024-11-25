@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { fetchProductById } from "../services/ApiService";
+import { fetchProductById } from "../../services/ApiService";
+import DetailView from './components/DetailView';
 
 function ProductPage() {
 
@@ -27,8 +28,7 @@ function ProductPage() {
 
     return (
       <div className="container mt-4">
-        <h1 className="mb-4">Product Page {id}</h1>
-        <h2>{product?.name}</h2>
+        {product && <DetailView product={product} />}
       </div>
     );
   }
