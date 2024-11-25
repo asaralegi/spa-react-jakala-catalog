@@ -1,11 +1,8 @@
 import { Link } from 'react-router-dom';
+import Image from './Image';
+import Description from './Description';
 
 function DetailView({ product }) {
-    const fertilizerTypes = new Map([
-        ['nitrogen', 'Nitrogenado'],
-        ['phosphorus', 'Fosforado'],
-    ]);    
-
     return (
       <div>
         <div className="row align-items-center mb-4">
@@ -23,34 +20,12 @@ function DetailView({ product }) {
         <div className="row">
             {/* Imagen */}
             <div className="col-md-6 mb-4">
-            <img
-                src={product.imgUrl}
-                alt={product.name}
-                className="img-fluid rounded shadow"
-                style={{ objectFit: 'cover', width: '100%', height: '100%' }}
-            />
+                <Image product={product} />
             </div>
 
             {/* Descripción */}
             <div className="col-md-6 mb-4">
-            <h2 className="mb-3">Detalles del Producto</h2>
-            <ul className="list-unstyled">
-                <li>
-                <strong>Nombre Científico:</strong> {product.binomialName}
-                </li>
-                <li>
-                <strong>Precio:</strong> {product.price.toFixed(2)}€
-                </li>
-                <li>
-                <strong>Riegos por semana:</strong> {product.wateringsPerWeek}
-                </li>
-                <li>
-                <strong>Fertilizante recomendado:</strong> {fertilizerTypes.get(product.fertilizerType)}
-                </li>
-                <li>
-                <strong>Altura:</strong> {product.heightInCm}cm
-                </li>
-            </ul>
+                <Description product={product} />
             </div>
         </div>
       </div>
