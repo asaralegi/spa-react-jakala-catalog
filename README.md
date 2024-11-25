@@ -19,6 +19,7 @@ Utilizaremos las siguientes dependencias:
 - react-router-dom: Componente Router para la navegación de la App
 - vitest @testing-library/react @testing-library/jest-dom @testing-library/user-event: paquetes necesarios para testing
 - bootstrap
+- prettier eslint-config-prettier eslint-plugin-prettier
 
 ## Desarrollo de la App
 
@@ -67,3 +68,8 @@ Utilizaremos las siguientes dependencias:
 ### Task 007 - Test de HomePage
 
 - Mejorar test de HomePage, para testear que se dibuja al menos el nombre de un producto de la lista
+
+### Task 008 - Limpieza de código
+
+- Instalar Prettier y dependecias para formatear el código (prettier eslint-config-prettier eslint-plugin-prettier)
+- Aplicar reglas de formateo básicas en el código
