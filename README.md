@@ -63,3 +63,7 @@ Utilizaremos las siguientes dependencias:
 - Crear subcomponentes DetailView, Image y Description para mostrar la información detallada de un producto
 - Añadir botón de navegación hacia atrás
 - Adaptar test de ProductPage haciendo mock de la llamada al servicio para simular la obtención de un producto
+
+### Task 007 - Test de HomePage
+
+- Mejorar test de HomePage, para testear que se dibuja al menos el nombre de un producto de la lista
