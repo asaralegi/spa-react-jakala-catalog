@@ -14,7 +14,7 @@ function Item({ product }) {
                 <p className="card-text text-muted">
                     <em>{product.binomialName}</em>
                 </p>
-                <p className="card-text fw-bold">${product.price.toFixed(2)}</p>
+                <p className="card-text fw-bold">{product.price.toFixed(2)}€</p>
                 <Link to={`/product/${product.id}`} className="btn btn-primary mt-2">Ver Detalle</Link>
             </div>
         </div>
