@@ -10,7 +10,7 @@ describe('ProductPage Component', () => {
     id: 1,
     name: 'Producto Ejemplo',
     price: 100,
-    imgUrl: 'https://via.placeholder.com/150'
+    imgUrl: 'https://placehold.co/150'
   };
 
   test('Renders Product h1 title', async () => {
