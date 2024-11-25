@@ -4,7 +4,7 @@
 
 Tal y como se solicita en el enunciado de la prueba se creará una aplicación SPA (Single Page Application) creada con React y que muestre el catálogo de la folristería Dulces Pétalos.
 
-Para ello, contamos con un API para el Backend de la aplicación proporcionado por Jakala (https://dulces-petalos.herokuapp.com).
+Para ello, contamos con un API para el Backend de la aplicación proporcionado por Jakala (https://dulces-petalos.jakala.es/api).
 
 La arquitectura que usaremos para la aplicación será: React + TypeScrypt + Vite. Para ello usaremos un Contenedor Docker con NodeJs 20 instalado.
 
